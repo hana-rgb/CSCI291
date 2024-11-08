@@ -8,11 +8,11 @@ int arrayIn[5]={10, 20, 30, 40, 50};
 int arrayOut[5]={10, 10, 20, 40, 50};
 void print_array(int array[], int length);
 void print_matrix(int mat[][nCols], int rows);
-
+bool isValid(const int arr[], int length, int pos);
 
 int main(){
-int arr[SIZE];
-int arr2d[nRows][nCols];
+int arr[SIZE]={0};
+int arr2d[nRows][nCols]={0};
 print_matrix(arr2d,nRows);
 void array(int 10, int 10, int 30, int 20, int 40, int 40, int 50, int 50);
 //Call to different functions
@@ -28,6 +28,7 @@ void print_matrix(int mat[][nCols], int rows){
    for(int i=0;i<nRows; i++){
     for(int j=0;j<nCols; j++)
     arr2d[i][j]=i*nCols+j+1;
+     if (isValid2D(rows, nCols, i, j)) { 
          printf("mat[%d][%d]= %d\n", i,j, mat[i][j]);
     puts("");     
    }     
